@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,700&display=swap');
+
+body{
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient( to top, #d5002e 50%, white 50%);
+}
+.headerInner{
+    max-width: 1290px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.headerInner .headerTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+}
+.headerTop img{
+    opacity: 0.5;
+    max-height: 34px;
+}
+.headerLinks a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.headerInner .headerBottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+.headerBottom a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px;
+}
+.headerBottom .mobileNav{
+    display: none;
+}
+
+.headerInner .logo img{
+    position: absolute;
+    height: 130px;
+}
+.titleContent h1{
+    font-size: 15px;
+    color: white;
+}
+
+.hero .container{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Small desktop and tablet*/
+@media only screen and (min-width: 871px) and (max-width: 1330px){
+    .headerTop .headerLogos{
+        padding-left: 145px;
+    }
+    .headerBottom .titleContent{
+        padding-left: 145px;
+    }
+    .hero .container{
+         display: flex;
+         flex-direction: column;
+    }
+    .hero .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .mainPromo img{
+        height: 985px;
+        width: 100%;
+        max-width: none!important;
+    }
+    .sideBoxes{
+        display: flex;
+        flex-direction: row!important;
+        max-width: none;
+        width: 100%;
+    }
+    .sideBoxes .fixtureOne{
+        width: 50%!important;
+       
+    }
+    .sideBoxes .fixtureTwo{
+        width: 50%!important;
+    }
+
+    .hero2 .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+}
+
+/*Mobile starts 871px*/
+@media only screen and (max-width: 871px){
+    .header{
+        background-image: linear-gradient( to top, #d5002e 65%, white 35%);
+    }
+
+    .titleContent{
+        display: none;
+    }
+
+    .headerBottom{
+        display: flex;
+        justify-content: center;
+        max-width: 871px;
+    }
+    .headerBottom .mobileNav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-right: 15px;
+    }
+    .mobileNav .login{
+        margin: 10px 0 0 40px;
+    }
+    .headerInner{
+        display: flex;
+    }
+    .headerInner .logo{
+        align-self: center;
+        position: relative;
+        margin-right: 75px;
+    }
+    .headerInner .logo img{
+        height: 85px;
+        margin-top: 45px;
+    }
+
+    .headerTop .headerLinks{
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    .headerLinks a:nth-child(4){
+        display: none;
+    }
+    .headerLinks a:nth-child(5){
+        display: none;
+    }
+    .headerLinks a:nth-child(6){
+        display: none;
+    }
+    .headerTop .headerLogos{
+        display: none;
+    }
+    .headerBottom .titleContent{
+        visibility: hidden;
+    }
+
+    .header .headerTop{
+        display: block;
+        height: 37px;
+    }
+
+    .headerBottom .headerLinks2{
+        display: none;
+    }
+
+    .hero .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .sideBoxes .fixtureOne{
+        width: 100%!important;
+        max-width: none;
+    }
+    .sideBoxes .fixtureTwo{
+        width: 100%!important;
+        max-width: none;
+    }
+}
+
+
+
+.mainPromo img{
+    height: 100%;
+    max-width: 1030px;
+    width: 100%;
+}
+
+
+.sideBoxes{
+    display: flex;
+    flex-direction: column;
+    height: 634px;
+    height: auto;
+}
+.sideBoxes h2{
+    position: absolute;
+    font-size: 80px;
+    text-align: center;
+    opacity: 0.1;
+    font-weight: bold;
+}
+.fixtureOne .eflLogo{
+    position: absolute;
+    display: flex;
+    height: 30px;
+    align-self: start;
+    margin-top: 40px;
+}
+.sideBoxes .fixtureOne{
+    display: flex;
+    background: #2D2D2D;
+    height: 333px;
+    width: 410px;
+    justify-content: space-around;
+}
+.fixtureOne .lowerBoxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+.lowerBoxes .tickets{
+    width: 50%;
+    height: 65px;
+    text-align: center;
+    background: #232323;
+}
+.lowerBoxes .travel{
+    width: 50%;
+    height: 65px;
+    text-align: center;
+    background: #1C1C1C;
+}
+
+
+.sideBoxes .fixtureTwo{
+    display: flex;
+    height: 333px;
+    width: 410px;
+    justify-content: space-around;
+    background-color: #D5112D;
+}
+.fixtureTwo .lowerBoxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    font-weight: bold;
+    width: 100%;
+}
+.lowerBoxes .highlights{
+    width: 50%;
+    height: 65px;
+    text-align: center;
+    background: #B10C25;
+    color: white;
+    border: none;
+}
+.lowerBoxes .highlights:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+}
+.lowerBoxes .report{
+    width: 50%;
+    height: 65px;
+    text-align: center;
+    background: #770515;
+    color: white;
+}
+
+.middleLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: relative;
+    padding: 33px 0 45px;
+}
+.middleLinks h2{
+    position: absolute;
+    font-size: 110px;
+    opacity: 0.1;
+}
+
+.middleLinks .subLinks{
+    z-index: 99999;
+}
+
+.middleLinks .subLinks a{
+    padding: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+}
+.middleLinks .subLinks a:hover{
+    color: black;
+}
+
+
+.hero2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.hero2 .container{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+}
+
+
+
+.hero2 .containerBoxImages{
+    display: flex;
+    width: 75%;
+}
+@media only screen and (min-width: 871px) and (max-width: 1330px){
+    .hero2 .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }  
+    .hero2 .containerBoxImages{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 871px){
+    .hero2 .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }  
+    .hero2 .containerBoxImages{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.containerBoxImages .boxImgs img{
+    width: 100%;
+}
+.containerBoxImages .containerBoxesTop{
+    padding-right: 4px;
+}
+.container .linksRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 330px;
+    width: 100%;
+    margin-left: 15px;
+}
+@media only screen and (min-width: 871px) and (max-width: 1330px){
+    .container .heroLinks{
+        display: flex;
+        max-width: 1180px;
+    }
+    .container .linksRight{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+    }
+    .container .firstLinks{
+        width: 100%;
+    }
+    .container .secondLinks{
+        width: 100%;
+    }
+    .container .heroBtn{
+        display: flex;
+        max-width: 30%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .newsBtn{
+        width: 50%;
+    }
+}
+
+
+
+.container .linksRight h3{
+    font-size: 12px;
+    color: red;
+}
+.container .linksRight h4{
+    font-size: 17px;
+}
+.container .link{
+    border-top: 1px solid lightgray;
+}
+.container .newsBtn{
+    height: 60px;
+    border: 1px solid red;
+    background: white;
+    font-weight: bold;
+}
+.container .newsBtn:hover{
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+
+.storeSec .container{
+    height: 800px;
+    background: #d8042c;
+    display: flex;
+    justify-content: center;
+}
+.boroSection .headerSec{
+    text-align: center;
+    color: white;
+}
+.boroSection .headerSec h1{
+    font-size: 75px;
+    margin: 0;
+}
+.boroSection .headerSec h2{
+    font-size: 200px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+.footer .footerSection{
+    height: 300px;
+    background-color: white;;
+}
